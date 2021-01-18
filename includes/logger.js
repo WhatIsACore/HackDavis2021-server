@@ -10,7 +10,7 @@ logger.add(new winston.transports.Console({
 }));
 
 // file output
-if(!process.env.NOLOG){
+if(!process.env.NOLOG) {
   logger.add(
     new winston.transports.File({filename: '../logs/server.log'})
   );
